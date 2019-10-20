@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   font-family: "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -12,13 +13,15 @@ body {
   flex-direction: column;
   height: 100%;
 }
-header h1{
+
+header h1 {
   text-align:center;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
   font-size: 2.5rem;
 }
+
 .nav {
   display: flex;
   position: relative;
@@ -33,6 +36,7 @@ header h1{
   padding: 0.25em 0.5em;
   align-items: center;
 }
+
 li a, .dropbtn {
   display: inline-block;
   color: rgba(165, 154, 154, 0.932);
@@ -46,15 +50,17 @@ li a, .dropbtn {
 li a:hover,a:focus {
   border-bottom: spx solid #e4dede;
 }
-#main{
-	float: left;
-	padding : 1%; 
-        color: black; 
-        background-color: #e6e6f0c7; 
-        width: 60%;
-        height: auto;
+
+#main {
+  float: left;
+  padding : 1%; 
+  color: black; 
+  background-color: #e6e6f0c7; 
+  width: 60%;
+  height: auto;
 }
-h2{
+
+h2 {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
@@ -62,38 +68,41 @@ h2{
   color: #6c757d;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
 p {
   text-align: justify;
   font-family: 'source sans pro','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-aside{
+aside {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
-	float: right;
-	padding :1%; 
-        color: black; 
-        background-color: #a2beb6; 
-        width: 39%; 
-        height: 700px;
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  float: right;
+  padding :1%; 
+  color: black; 
+  background-color: #a2beb6; 
+  width: 39%; 
+  height: 800px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-footer{
+footer {
   color: black; 
   background-color: #343a40;
   text-decoration-color:  rgba(165, 154, 154, 0.932); 
+}
 
-}
 footer hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 2px solid rgba(0, 0, 0, 0.644);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.644);
 }
-footer p{
+
+footer p {
   text-align: center;
 }
-footer table{
+
+footer table {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -103,7 +112,8 @@ footer table{
   color: rgba(138, 128, 128, 0.932);
   /*border: 1px solid blue;*/
 }
-.foo-links{
+
+.foo-links {
   display: inline-block;
   color: rgba(165, 154, 154, 0.932);
   text-align: left;
@@ -114,10 +124,12 @@ footer table{
   padding: 0;
   margin: 0;
 }
+
 .foo-links a:hover,a:focus {
   border-bottom: 2px solid #e4dede;
 }
-footer h3{
+
+footer h3 {
   text-align: inherit;
   color: #58595a;
   font-size: 1.25em;
