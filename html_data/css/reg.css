@@ -11,7 +11,7 @@ body {
   background-color: #fff;
 }
 
-h1, h2 {
+h1 {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
@@ -43,16 +43,4 @@ input[type=submit], input[type=reset] {
 
 input[type=text]:focus {
   border : 2px solid #555;
-}
-
-h2 {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  color: #6c757d;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: rgba(146, 110, 110, 0.171);
-  border-radius: 2px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
