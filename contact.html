@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="contact.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<h2>Contact Us</h2>
+ <h3>Contact Info</h3>
+<table>
+    <thead>
+      <th>ADDRESS</th>
+      <th>TELEPHONE</th>
+      <th>FAX</th>
+    </thead>
+    <tbody>
+      <tr>
+          <td>University of Ruhuna</td>
+          <td><a href="tel:(+94) 041-2222681 , (+94) 041-2222682">(+94) 041-2222681 , (+94) 041-2222682</a></td>
+          <td><a href="tel:(+94) 041-2227001 , (+94) 041-2222681">(+94) 041-2227001 , (+94) 041-2222681</a></td>
+      </tr>  
+      <tr>
+          
+             <td>Wellamadama</td>
+             <td><a href="tel:(+94) 041-2227001 , (+94) 041-2227002">(+94) 041-2227001 , (+94) 041-2227002</a></td>
+             
+      </tr>  
+      <tr> 
+              <td>Matara</td>
+              <td><a href="tel:(+94) 041-2227003 , (+94) 041-2227004">(+94) 041-2227003 , (+94) 041-2227004</a></td>
+            
+      </tr>
+    </tbody>
+  </table>
+  
+ <div class="container">
+    <form action="/contact.php" method="POST">
+      <label for="name">Your Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="email">E-mail </label><br>
+      <input type="email" name="email" placeholder="abc@example.com"><br>
+
+      <label for="subject">Subject</label><br>
+      <textarea id="subject" name="subject" placeholder="Ask from us.." style="height:200px"></textarea>
+  
+      <a href="mailto:abc@gmail.com?Subject=Hello SDC!"><input type="submit" value="Submit"></a>
+      <input type = "reset" value = "clear">
+    </form>
+  </div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+<script type="text/javascript">
+	function msg_error(msg){
+		alert("Error: " + msg + " is not Filled");
+		return false;
+	}
+	function formVal(){
+		if(document.forms["reg"]["fname"].value == "")
+        	msg_error("Full Name");
+        else if(document.forms["reg"]["position"].value == "")
+        	msg_error("Position");
+        else if(document.forms["reg"]["datefirst"].value == "")
+        	msg_error("Date of First Appointment");
+        else if(document.forms["reg"]["department"].value == "")
+        	msg_error("Department");
+        else if(document.forms["reg"]["faculty"].value == "")
+        	msg_error("Faculty");
+        else if(document.forms["reg"]["officaladd"].value == "")
+        	msg_error("Address");
+        else if(document.forms["reg"]["phone"].value == "")
+        	msg_error("Phone Number");
+		else if(document.forms["reg"]["fax"].value == "")
+        	msg_error("Fax");
+        else if(document.forms["reg"]["email"].value == "")
+        	msg_error("E-mail Address");
+        else if(document.forms["reg"]["dob"].value == "")
+        	msg_error("Date of Birth");	
+		else
+        	alert("Form Submited Successfully!");
+	}	
+</script>
+</head>
+<body>
+<div class="container">
+	<h2>Registration</h2>
+<div>
+	<form name = "reg" action = "/reg.php" onsubmit = "return formVal()" method = "post">
+	
+	  
+	<h3>Application Form<br>Certificate Course for Professional Development in Higher Education</h3>
+	
+	<fieldset>
+	
+	<legend>Personal Information</legend>
+	<label>
+	Full Name(Mr. /Mrs./Ms./Rev/Dr) : <input type="text" name="fname" placeholder = "Your name...">
+	</label>
+	<br><br>
+	<label>
+	Position(Permanent/Temporary/Contract) : <input type="text" name="position" >
+	</label><br><br>
+	<label>
+	Date of First appointment : <input type="date" name="datefirst">
+	</label><br><br>
+    <label>
+	Department : <input type="text" name="department">&nbsp&nbsp&nbsp </label>
+	<label>
+	Faculty : <input type="text" name="faculty">
+	</label><br><br>
+	<label>
+	<table style = "margin-bottom : 0px">
+	<tr><td>Official Address :</td>
+	<td><textarea name="officaladd" rows = "4" cols = "25"  placeholder ="Type the address line by line" style = "resize : none"></textarea></td></tr>
+	</table>
+	</label><br><br>
+	<label>
+	Phone : <input type="text" name="phone" value = "+94">&nbsp&nbsp&nbsp 
+	</label>
+	<label>
+	Fax : <input type="text" name="fax">&nbsp&nbsp&nbsp
+	</label>
+	<label>
+	E-mail : <input type="email" name="email"><br><br>
+	</label>
+	<label>
+	Date of Birth : <input type="date" name="dob"><br><br>
+	</label>
+	<label>
+	Male/Female?<br>
+	<input type="radio" name="gender" value="male" checked><small>Male</small>	<br>
+    	<input type="radio" name="gender" value="female"><small>Female</small><br>
+	</label>
+	</fieldset><br><br>
+	<table border="1px solid grey" style = "border-collapse: collapse">
+	Academic Qualifications:
+	<thead>
+		<th>Degree</th>
+		<th>Date of Award</th>
+		<th>University</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td><input type="text" name="aca_degree" style="border : none"></td>
+			<td><input type="date" name="aca_date" style="border : none"></td>
+			<td><input type="text" name="aca_uni" style="border : none"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="aca_degree" style="border : none"></td>
+			<td><input type="date" name="aca_date" style="border : none"></td>
+			<td><input type="text" name="aca_uni" style="border : none"></td>
+		</tr>
+		<tr>
+			<td><input type="text" name="aca_degree" style="border : none"></td>
+			<td><input type="date" name="aca_date" style="border : none"></td>
+			<td><input type="text" name="aca_uni" style="border : none"></td>
+		</tr>
+	
+	</tbody>
+	</table><br><br>	
+	<label>
+	Have you completed a Staff Development Programme previously?<br>
+	<input type="radio" name="experiance" value="no"><small>YES</small><br>
+	<input type="radio" name="experiance" value="yes"><small>NO</small><br>
+    </label>	
+	If yes, please specify the Units completed: <br> 
+	
+	<label>
+	Name of Programme:  <input type="text" name="pname"><br>
+	</label>
+	<label>
+	Institution: <input type="text" name="institution"><br><br>
+	</label>
+	<input type = "submit" value = "Submit">
+	<input type = "reset" value = "clear">
+</form>		
+</div>
+</div>
+</body>
+</html>
+

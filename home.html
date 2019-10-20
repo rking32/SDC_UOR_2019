@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="login.css" rel="stylesheet">
+	<link href="slide.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  	<table>
+  	<tbody><tr align="center;">
+  		<td><img src="https://upload.wikimedia.org/wikipedia/en/6/65/LOGO_OF_RUHUNA.jpg" width="100" hspace="5" height="125"></td>
+  		<td style="text-align: center; align-items: center; width: 100%"><h1>Staff Development Center<br>University of Ruhuna</h1></td>
+  	</tr>
+  
+  	</tbody></table>
+  </header>
+    <ul class="nav" role="navigation">
+    <li><a href="home.html">Home</a></li>
+    
+    <li><a href="#about" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./about.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">About Us</a></li>
+    <li><a href="#staff" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./staff.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">Staff</a></li>
+    <li><a href="#registation" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./registration.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'900px\'></iframe>'">Registration</a></li>
+    <li><a href="#downloads" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./downloads.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">Downloads</a></li>
+    <li><a href="#events & news" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./events.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">Events & News</a></li>
+    <li><a href="#programs" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./programs.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">Programs</a></li>
+    <li><a href="#contact us" onclick="document.getElementById('main').innerHTML = '<iframe src=\'./contact.html\' scrolling=\'no\' frameborder=\'0\' width=\'100%\' height=\'700px\'></iframe>'">Contact us</a></li>
+    <li class="login">You aren't logged in? <span class="login" onclick="document.getElementById('id01').style.display='block'">LOGIN</span></li>
+    </ul>
+
+  <br>
+  <!-- The Modal -->  
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content" action="/action_page.php" method="POST">
+        <div class="imgcontainer">
+          <img src ="img/staffn.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+  <div id="container">
+    <div class="div1" id="main">
+    	<h2>Home</h2>
+    	<h3>Welcome to the Staff Development Center of University of Ruhuna</h3>
+    		<!-- Slideshow container -->
+        <div class="slide-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src = "img/img1.jpg" style="width: 100%">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/img2.jpg" style="width: 100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div >
+            <img src="img/img3.jpg" style="width: 100%">
+            <div class="text">Caption Three</div >
+          </div >
+        </div >
+        <br >
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot"></span >
+          <span class="dot"></span >
+          <span class="dot"></span >
+        </div >
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+    	  	<p> This is our official web page of Staff development center of University of Ruhuna.We are here to work on the development of our university staffs and to help them.According to that we do certain programmes at this University. Like as CCDPHE programme to develop their educational qualification, funding programme to help them economically and some other programmes.To know more about us head up to About us. </p>
+
+    </div>
+      
+      
+    <aside>
+        	<h3>Latest News</h3>
+        	<p>=> Registration now on Master of Arts in Peace and Development Studies (2020-2022)</p>
+        	<p>=> Faculty of Faculty of Humanities and Social Sciences will be recommenced on the 15th of May 2019</p>
+    </aside>
+  </div>
+
+  <footer>
+    <hr>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <h3>Contact Info</h3>
+            <dl>ADDRESS</dl>
+              <dt>Staff development center</dt>
+              <dt>University of Ruhuna</dt>
+              <dt>Wellamadama</dt>
+              <dt>Matara</dt>
+            <dl>TELEPHONE</dl>
+               <dt>(+94) 041-2222681 , (+94) 041-2222682</dt>
+               <dt>(+94) 041-2227001 , (+94) 041-2227002</dt>
+               <dt>(+94) 041-2227003 , (+94) 041-2227004</dt>
+            <dl>FAX</dl>
+              <dt>(+94) 041-2227001 , (+94) 041-2222681</dt>
+          </td>
+          <td>
+            <h3>Useful Links</h3>
+            <ul class="foo-links">
+                          
+                <li><a href="http://ruh.ac.lk/ruh/index.php">University</a></li>
+               <li><a href="http://scilms.ruh.ac.lk/moodle/">Learning Management system</a></li>
+                <li><a href="http://www.lib.ruh.ac.lk/web1/">Main Library</a></li>
+               </ul>
+                <h3>Quick Links</h3>
+                <ul class="foo-links">
+                          
+                 <li><a href="events.html"> Upcoming</a></li>
+                <li><a href="programs.html"> News &amp; Events</a></li>
+                 <li><a href="downloads.html"> Downloads</a></li>
+                </ul>
+          </td>
+          <td>
+            <iframe class= "gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.409944071389!2d80.57394035070905!3d5.93809743131691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1391b4a29e707%3A0xd54277175e326bc2!2sUniversity+of+Ruhuna!5e0!3m2!1sen!2slk!4v1565244105111!5m2!1sen!2slk" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <p>&copy; 2019 All rights reserved - Staff Development center - University of Ruhuna</p>
+  </footer>
+</body>
+</html>
+
