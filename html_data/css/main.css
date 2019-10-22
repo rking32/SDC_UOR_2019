@@ -59,7 +59,7 @@ li a, .dropbtn {
 }
 
 li a:hover,a:focus {
-  border-bottom: 4px solid #6d92bd;
+  border-bottom: 7px solid #6d92bd;
 }
 #container{
   flex: auto;
