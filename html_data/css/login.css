@@ -100,14 +100,15 @@ label {
 span.login {
   color : gray;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  transition: border-bottem 1s ease-in;
+  transition: border 1s ease-in;
+  padding: 3px;
 }
 
 span.login:hover {
   opacity: 0.7;
   color: lightblue;
-  border-bottom: 4px solid #e4dede;
-
+  border: 2px solid #e4dede;
+  border-radius: 5px;
 }
 
 li.login {
