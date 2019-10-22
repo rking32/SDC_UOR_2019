@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   display: flex;
   font-family: "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -10,9 +6,11 @@ body {
   color: #212529;
   text-align: left;
   background-color: #eeeeee;
+  background-blend-mode: difference;
   flex-direction: column;
   height: 100%;
 }
+
 
 h1 {
   text-align:center;
@@ -20,6 +18,7 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   font-size: 2.5rem;
+  color: lightsalmon;
 }
 
 h2 {
@@ -27,7 +26,7 @@ h2 {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 1.5rem;
-  color: #414141;
+  color: rgb(156, 140, 133);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: rgba(146, 110, 110, 0.171);
   border-radius: 2px;
@@ -56,11 +55,16 @@ li a, .dropbtn {
   padding: 14px 16px;
   text-decoration: none;
   transition: border-bottom 1s ease-in;
+  transition: border-top 1s ease-in;
   font-size: 1.15em;
 }
 
 li a:hover,a:focus {
-  border-bottom: spx solid #e4dede;
+  border-bottom: 4px solid #6d92bd;
+  border-top: 4px solid #6d92bd;
+}
+#container{
+  flex: auto;
 }
 
 #main {
@@ -70,6 +74,7 @@ li a:hover,a:focus {
   background-color: #e6e6f0c7; 
   width: 60%;
   height: auto;
+  background-attachment: fixed;
 }
 
 p {
@@ -92,6 +97,10 @@ footer {
   color: white; 
   background-color: #343a40;
   text-decoration-color:  rgba(255, 255, 255, 0.932); 
+  flex-shrink: 0;
+  height: 520px;
+  /*border: 3px #64122b solid ;*/
+  align-content: center;
 }
 
 footer hr {
@@ -107,8 +116,9 @@ footer p {
 
 footer table {
   width: 100%;
-  padding: 0;
-  margin: 50px;
+  padding: 2em;
+  margin-left: 2em;
+  margin-right: 2em;;
   border-collapse: collapse;
   text-align: left;
   font-size: 0.9em;
@@ -134,7 +144,7 @@ footer table {
 
 footer h3 {
   text-align: inherit;
-  color: #dadada;
+  color: #cfc5c5e8;
   font-size: 1.25em;
 }
 
