@@ -95,7 +95,7 @@ aside {
   color: black; 
   background-color: #b3b3b3; 
   width: 40%; 
-  height: 900px;
+  height: 800px;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   mix-blend-mode: color-dodge;
   display: flex;
@@ -105,12 +105,24 @@ aside {
 aside h2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
-  color: #242020;
+  color: black;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 1.5rem;
   background-color: #726f6f;opacity: 0,5;
   border-radius: 4px;
+}
+.notice > a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 4px 5px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.notice a:hover,a:focus {
+  border-bottom: none;
+  border-top: none;
 }
 
 footer {
