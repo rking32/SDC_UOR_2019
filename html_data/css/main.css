@@ -5,12 +5,14 @@ body {
   font-weight: 400;
   color: #212529;
   text-align: left;
-  background-color: #eeeeee;
+  background-color: #cfc4c4;
   background-blend-mode: difference;
   flex-direction: column;
   height: 100%;
+  background-blend-mode: difference;
+  background-image: url(https://previews.123rf.com/images/belodarova/belodarova1706/belodarova170600023/80117842-banner-with-vintage-background-web-header-template-website-design-simple-design.jpg);
+  
 }
-
 
 h1 {
   text-align:center;
@@ -19,6 +21,7 @@ h1 {
   line-height: 1.2;
   font-size: 2.5rem;
   color: lightsalmon;
+  mix-blend-mode: color-dodge;
 }
 
 h2 {
@@ -30,7 +33,8 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: rgba(146, 110, 110, 0.171);
   border-radius: 2px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  mix-blend-mode: color-dodge;
 }
 
 .nav {
@@ -75,6 +79,7 @@ li a:hover,a:focus {
   width: 60%;
   height: auto;
   background-attachment: fixed;
+  mix-blend-mode: color-dodge;
 }
 
 p {
@@ -88,9 +93,10 @@ aside {
   padding :1%; 
   color: black; 
   background-color: #b3b3b3; 
-  width: 39%; 
+  width: 40%; 
   height: 800px;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  mix-blend-mode: color-dodge;
 }
 
 footer {
@@ -101,6 +107,8 @@ footer {
   height: 520px;
   /*border: 3px #64122b solid ;*/
   align-content: center;
+  margin: 0em;
+  padding: 0em;
 }
 
 footer hr {
