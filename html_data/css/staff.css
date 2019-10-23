@@ -18,7 +18,7 @@ h1 {
 h2 {
   display: block;
   padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 4%;
   font-size: 1.5rem;
   color: #414141;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -34,47 +34,24 @@ table {
   font-weight: 400;
   color: #212529;
   text-align: left;
-  background-color: #eeeeee;
+  background-color: #c9c4c4;
 }
-
-input {
-  display: none;
-  visibility: hidden;
-}
-label {
+a {
   display: block;
   padding: 0.5em;
   text-align: center;
   border-bottom: 1px solid #CCC;
-  color: #666;
-}
-label:hover {
-  color: #000;
-}
-label::before {
-  font-family: Consolas, monaco, monospace;
-  font-weight: bold;
+  color: rgb(128, 84, 84);
+  padding : 1em;
+  margin : 1em;
+  background-color: rgb(128, 124, 124);
+  border-radius: 4px;
   font-size: 1.25em;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:hover {
+  color: rgb(21, 22, 78);
   background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
-}
-#expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-  color: #FFF;
-}
-section {
-  padding: 0 20px;
-}
-#toggle:checked ~ #expand {
-  height: fit-content;
-}
-#toggle:checked ~ label::before {
-  content: "-";
+  font-family: "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif;
+  transform: scale(1.1);
 }

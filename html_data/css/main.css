@@ -1,6 +1,9 @@
 body {
   display: flex;
   font-family: "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
   font-size: 1em;
   font-weight: 400;
   color: #212529;
@@ -112,17 +115,19 @@ aside h2{
   background-color: #726f6f;opacity: 0,5;
   border-radius: 4px;
 }
-.notice > a{
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 4px 5px;
+.notice a{
+  display: inherit;
+  color: rgb(49, 46, 46);
+  text-align: left;
   text-decoration: none;
   font-size: 1em;
+  padding: 0em;
+  transition: border-bottom 1s ease-in;
 }
 .notice a:hover,a:focus {
-  border-bottom: none;
+  border-bottom: 1px solid #4b6e96;
   border-top: none;
+  cursor: pointer;
 }
 
 footer {
@@ -138,7 +143,6 @@ footer {
 }
 
 footer hr {
-  margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 2px solid rgba(255, 255, 255, 0.644);
