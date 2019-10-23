@@ -27,9 +27,12 @@ h3{
 p {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   font-family: "Segoe UI",Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 400;
   color: #212529;
+  background-color: #c0b5b5;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  font-size: 1.1em;
+  font-weight: 400;
   text-align: left;
-  background-color: #eeeeee;
+  margin-top: 8%;
+  line-height: 1.20em;
 }
