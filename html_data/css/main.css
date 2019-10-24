@@ -78,7 +78,7 @@ li a:hover,a:focus {
   color: black; 
   background-color: #e6e6f0c7; 
   width: 60%;
-  height: auto;
+  height: 900px;
   background-attachment: fixed;
   mix-blend-mode: color-dodge;
   overflow: auto;
