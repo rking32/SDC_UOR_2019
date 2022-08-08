@@ -9,10 +9,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #cfc4c4;
-  background-blend-mode: difference;
   flex-direction: column;
   height: 100%;
-  background-blend-mode: difference;
   background-image: url(https://previews.123rf.com/images/belodarova/belodarova1706/belodarova170600023/80117842-banner-with-vintage-background-web-header-template-website-design-simple-design.jpg);
 }
 
